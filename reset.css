@@ -1,0 +1,80 @@
+/*  
+This CSS reset is a combination of various reset styles from the past, 
+plus modern additions to improve cross-browser compatibility.
+
+It's important to note that while this CSS reset is designed to improve cross-browser compatibility,
+
+it does not guarantee perfect results. Some elements may still have their original styles applied,
+and the reset may not cover all possible edge cases.
+
+It's always a good idea to test this CSS reset on various browsers and devices to ensure it works as expected.
+
+Sources:
+https://piccalil.li/blog/a-more-modern-css-reset/
+https://www.joshwcomeau.com/css/custom-css-reset/
+https://gist.github.com/DavidWells/18e73022e723037a50d6
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/*
+5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    border-style: none;
+}
+
+/*
+    Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    margin-bottom: 1rem;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
